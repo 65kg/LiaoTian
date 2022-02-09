@@ -14,6 +14,9 @@ import java.util.TimerTask;
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobUser;
 
+/**
+ * 欢迎页面
+ */
 public class Splash extends AppCompatActivity {
 
     @Override
@@ -24,6 +27,12 @@ public class Splash extends AppCompatActivity {
         Timer tm = new Timer();
         tm.schedule(timetast,2000);
     }
+
+    /**
+     * 定义一个两秒的欢迎页面，之后判断是否登录账号
+     * 如果有已经登录的就直接进入主页
+     * 没有就进入登录页面
+     */
     TimerTask timetast = new TimerTask() {
         @Override
         public void run() {

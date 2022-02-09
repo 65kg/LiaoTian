@@ -23,6 +23,7 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
 
 /**
+ * 注册账号的页面
  * A simple {@link Fragment} subclass.
  */
 public class RegisterFragment extends Fragment {
@@ -62,6 +63,10 @@ public class RegisterFragment extends Fragment {
         click();
     }
 
+    /**
+     * 点击事件的方法
+     *
+     */
     private void click() {
         register.setOnClickListener(new View.OnClickListener() {
             @Override

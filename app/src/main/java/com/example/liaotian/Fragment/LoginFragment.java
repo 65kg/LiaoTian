@@ -27,6 +27,7 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
 
 /**
+ * 登录界面
  * A simple {@link Fragment} subclass.
  */
 public class LoginFragment extends Fragment {
