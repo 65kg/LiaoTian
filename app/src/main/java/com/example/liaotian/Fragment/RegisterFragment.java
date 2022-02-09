@@ -27,7 +27,7 @@ import cn.bmob.v3.listener.SaveListener;
  */
 public class RegisterFragment extends Fragment {
     private EditText usename,password,nikename;
-    private Button register,banck;
+    private Button register;
     private NavController controller;
 
 
@@ -59,7 +59,6 @@ public class RegisterFragment extends Fragment {
         password = getView().findViewById(R.id.password);
         nikename = getView().findViewById(R.id.password2);
         register = getView().findViewById(R.id.register);
-        banck = getView().findViewById(R.id.banck);
         click();
     }
 
@@ -94,13 +93,6 @@ public class RegisterFragment extends Fragment {
                 }
             }
         });
-        banck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                controller = Navigation.findNavController(view);
-                controller.navigate(R.id.action_registerFragment_to_loginFragment);
 
-            }
-        });
     }
 }

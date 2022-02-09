@@ -35,7 +35,7 @@ public class LoginFragment extends Fragment {
     private TextView user,//注册账号
                      pass;//忘记密码
 
-    private Button button,banck ;
+    private Button button ;
     private NavController controller;
     public LoginFragment() {
         // Required empty public constructor
@@ -64,7 +64,7 @@ public class LoginFragment extends Fragment {
         user = getView().findViewById(R.id.textuser);
         pass = getView().findViewById(R.id.textpassword);
         button = getView().findViewById(R.id.login11);
-        banck = getView().findViewById(R.id.banck);
+
 
         click();
     }
@@ -87,12 +87,7 @@ public class LoginFragment extends Fragment {
 
             }
         });
-//        banck.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getActivity().finish();
-//            }
-//        });
+
     }
     /**
      * 登录的操作

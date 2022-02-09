@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.liaotian.R;
 
-import cn.bmob.v3.Bmob;
+
 
 
 /**
@@ -23,20 +23,10 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        Bmob.initialize(this,"320a371a14fd5a1f1820feeeeb04e264");//注册bmob
+
 
     }
 
-    @Override
-    public void onBackPressed() {
-        bankTask();
-    }
 
-    private void bankTask() {
-        if (getSupportFragmentManager().getBackStackEntryCount() == 3){
-            onDestroy();
-        }else {
-            getSupportFragmentManager().popBackStack();
-        }
-    }
+
 }
